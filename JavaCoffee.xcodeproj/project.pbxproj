@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26258EB4248AE410009769C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26258EB3248AE410009769C1 /* AppDelegate.swift */; };
+		26258EB6248AE410009769C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26258EB5248AE410009769C1 /* SceneDelegate.swift */; };
+		26258EB9248AE410009769C1 /* JavaCoffee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26258EB7248AE410009769C1 /* JavaCoffee.xcdatamodeld */; };
+		26258EBB248AE410009769C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26258EBA248AE410009769C1 /* ContentView.swift */; };
+		26258EBD248AE416009769C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26258EBC248AE416009769C1 /* Assets.xcassets */; };
+		26258EC0248AE416009769C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26258EBF248AE416009769C1 /* Preview Assets.xcassets */; };
+		26258EC3248AE416009769C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26258EC1248AE416009769C1 /* LaunchScreen.storyboard */; };
+		26258ECD248AEBF5009769C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26258ECC248AEBF5009769C1 /* GoogleService-Info.plist */; };
+		2672DA65248AF2630034751C /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672DA64248AF2630034751C /* Drink.swift */; };
+		2672DA67248AF67A0034751C /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672DA66248AF67A0034751C /* FirebaseReference.swift */; };
+		2672DA69248AF9000034751C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672DA68248AF9000034751C /* Constants.swift */; };
+		2672DA6D248B11E30034751C /* DrinkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672DA6C248B11E30034751C /* DrinkRow.swift */; };
+		2672DA6F248B14770034751C /* DrinkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672DA6E248B14770034751C /* DrinkItem.swift */; };
+		5AABAEF932B32FB4A55BEF8C /* Pods_JavaCoffee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FABD7B07D97CE999A02D380 /* Pods_JavaCoffee.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1CD91221E5562A6094B98E43 /* Pods-JavaCoffee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaCoffee.debug.xcconfig"; path = "Target Support Files/Pods-JavaCoffee/Pods-JavaCoffee.debug.xcconfig"; sourceTree = "<group>"; };
+		26258EB0248AE410009769C1 /* JavaCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JavaCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26258EB3248AE410009769C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26258EB5248AE410009769C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		26258EB8248AE410009769C1 /* JavaCoffee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JavaCoffee.xcdatamodel; sourceTree = "<group>"; };
+		26258EBA248AE410009769C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		26258EBC248AE416009769C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26258EBF248AE416009769C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26258EC2248AE416009769C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		26258EC4248AE416009769C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26258ECC248AEBF5009769C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2672DA64248AF2630034751C /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		2672DA66248AF67A0034751C /* FirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
+		2672DA68248AF9000034751C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2672DA6C248B11E30034751C /* DrinkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkRow.swift; sourceTree = "<group>"; };
+		2672DA6E248B14770034751C /* DrinkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkItem.swift; sourceTree = "<group>"; };
+		290CCF3B5224E1C9EE7B330D /* Pods-JavaCoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaCoffee.release.xcconfig"; path = "Target Support Files/Pods-JavaCoffee/Pods-JavaCoffee.release.xcconfig"; sourceTree = "<group>"; };
+		4FABD7B07D97CE999A02D380 /* Pods_JavaCoffee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JavaCoffee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26258EAD248AE410009769C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AABAEF932B32FB4A55BEF8C /* Pods_JavaCoffee.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26258EA7248AE410009769C1 = {
+			isa = PBXGroup;
+			children = (
+				26258EB2248AE410009769C1 /* JavaCoffee */,
+				26258EB1248AE410009769C1 /* Products */,
+				E3586BA1A495E23CBCCB4D72 /* Pods */,
+				705FB9ED63124DEDA351C679 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		26258EB1248AE410009769C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26258EB0248AE410009769C1 /* JavaCoffee.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26258EB2248AE410009769C1 /* JavaCoffee */ = {
+			isa = PBXGroup;
+			children = (
+				26258EB3248AE410009769C1 /* AppDelegate.swift */,
+				26258EB5248AE410009769C1 /* SceneDelegate.swift */,
+				26258EBA248AE410009769C1 /* ContentView.swift */,
+				26258EBC248AE416009769C1 /* Assets.xcassets */,
+				26258EC1248AE416009769C1 /* LaunchScreen.storyboard */,
+				26258ECC248AEBF5009769C1 /* GoogleService-Info.plist */,
+				26258EC4248AE416009769C1 /* Info.plist */,
+				26258EB7248AE410009769C1 /* JavaCoffee.xcdatamodeld */,
+				26258EBE248AE416009769C1 /* Preview Content */,
+				2672DA6B248B09220034751C /* Model */,
+				2672DA6A248B090B0034751C /* Helpers */,
+				2672DA6C248B11E30034751C /* DrinkRow.swift */,
+				2672DA6E248B14770034751C /* DrinkItem.swift */,
+			);
+			path = JavaCoffee;
+			sourceTree = "<group>";
+		};
+		26258EBE248AE416009769C1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				26258EBF248AE416009769C1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2672DA6A248B090B0034751C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2672DA66248AF67A0034751C /* FirebaseReference.swift */,
+				2672DA68248AF9000034751C /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2672DA6B248B09220034751C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2672DA64248AF2630034751C /* Drink.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		705FB9ED63124DEDA351C679 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FABD7B07D97CE999A02D380 /* Pods_JavaCoffee.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3586BA1A495E23CBCCB4D72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CD91221E5562A6094B98E43 /* Pods-JavaCoffee.debug.xcconfig */,
+				290CCF3B5224E1C9EE7B330D /* Pods-JavaCoffee.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26258EAF248AE410009769C1 /* JavaCoffee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26258EC7248AE416009769C1 /* Build configuration list for PBXNativeTarget "JavaCoffee" */;
+			buildPhases = (
+				D483AAA7CB7F0E457A475444 /* [CP] Check Pods Manifest.lock */,
+				26258EAC248AE410009769C1 /* Sources */,
+				26258EAD248AE410009769C1 /* Frameworks */,
+				26258EAE248AE410009769C1 /* Resources */,
+				031E1196BC14C13BDAD57EF1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JavaCoffee;
+			productName = JavaCoffee;
+			productReference = 26258EB0248AE410009769C1 /* JavaCoffee.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26258EA8248AE410009769C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Yanbing;
+				TargetAttributes = {
+					26258EAF248AE410009769C1 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 26258EAB248AE410009769C1 /* Build configuration list for PBXProject "JavaCoffee" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26258EA7248AE410009769C1;
+			productRefGroup = 26258EB1248AE410009769C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26258EAF248AE410009769C1 /* JavaCoffee */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26258EAE248AE410009769C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26258EC3248AE416009769C1 /* LaunchScreen.storyboard in Resources */,
+				26258ECD248AEBF5009769C1 /* GoogleService-Info.plist in Resources */,
+				26258EC0248AE416009769C1 /* Preview Assets.xcassets in Resources */,
+				26258EBD248AE416009769C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		031E1196BC14C13BDAD57EF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JavaCoffee/Pods-JavaCoffee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JavaCoffee/Pods-JavaCoffee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JavaCoffee/Pods-JavaCoffee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D483AAA7CB7F0E457A475444 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JavaCoffee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26258EAC248AE410009769C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26258EB4248AE410009769C1 /* AppDelegate.swift in Sources */,
+				2672DA6D248B11E30034751C /* DrinkRow.swift in Sources */,
+				2672DA6F248B14770034751C /* DrinkItem.swift in Sources */,
+				26258EB9248AE410009769C1 /* JavaCoffee.xcdatamodeld in Sources */,
+				26258EBB248AE410009769C1 /* ContentView.swift in Sources */,
+				2672DA65248AF2630034751C /* Drink.swift in Sources */,
+				2672DA69248AF9000034751C /* Constants.swift in Sources */,
+				2672DA67248AF67A0034751C /* FirebaseReference.swift in Sources */,
+				26258EB6248AE410009769C1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		26258EC1248AE416009769C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26258EC2248AE416009769C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26258EC5248AE416009769C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26258EC6248AE416009769C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26258EC8248AE416009769C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CD91221E5562A6094B98E43 /* Pods-JavaCoffee.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"JavaCoffee/Preview Content\"";
+				DEVELOPMENT_TEAM = M25DHW9923;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = JavaCoffee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YanbingPersonal.JavaCoffee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26258EC9248AE416009769C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 290CCF3B5224E1C9EE7B330D /* Pods-JavaCoffee.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"JavaCoffee/Preview Content\"";
+				DEVELOPMENT_TEAM = M25DHW9923;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = JavaCoffee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YanbingPersonal.JavaCoffee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26258EAB248AE410009769C1 /* Build configuration list for PBXProject "JavaCoffee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26258EC5248AE416009769C1 /* Debug */,
+				26258EC6248AE416009769C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26258EC7248AE416009769C1 /* Build configuration list for PBXNativeTarget "JavaCoffee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26258EC8248AE416009769C1 /* Debug */,
+				26258EC9248AE416009769C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		26258EB7248AE410009769C1 /* JavaCoffee.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				26258EB8248AE410009769C1 /* JavaCoffee.xcdatamodel */,
+			);
+			currentVersion = 26258EB8248AE410009769C1 /* JavaCoffee.xcdatamodel */;
+			path = JavaCoffee.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 26258EA8248AE410009769C1 /* Project object */;
+}
