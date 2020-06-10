@@ -20,6 +20,8 @@
 		2672DA69248AF9000034751C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672DA68248AF9000034751C /* Constants.swift */; };
 		2672DA6D248B11E30034751C /* DrinkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672DA6C248B11E30034751C /* DrinkRow.swift */; };
 		2672DA6F248B14770034751C /* DrinkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672DA6E248B14770034751C /* DrinkItem.swift */; };
+		268803F5248BEF5F002422F7 /* DrinkListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268803F4248BEF5F002422F7 /* DrinkListener.swift */; };
+		268803F7248C4FE3002422F7 /* DrinkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268803F6248C4FE3002422F7 /* DrinkDetail.swift */; };
 		5AABAEF932B32FB4A55BEF8C /* Pods_JavaCoffee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FABD7B07D97CE999A02D380 /* Pods_JavaCoffee.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 		2672DA68248AF9000034751C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2672DA6C248B11E30034751C /* DrinkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkRow.swift; sourceTree = "<group>"; };
 		2672DA6E248B14770034751C /* DrinkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkItem.swift; sourceTree = "<group>"; };
+		268803F4248BEF5F002422F7 /* DrinkListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkListener.swift; sourceTree = "<group>"; };
+		268803F6248C4FE3002422F7 /* DrinkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetail.swift; sourceTree = "<group>"; };
 		290CCF3B5224E1C9EE7B330D /* Pods-JavaCoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaCoffee.release.xcconfig"; path = "Target Support Files/Pods-JavaCoffee/Pods-JavaCoffee.release.xcconfig"; sourceTree = "<group>"; };
 		4FABD7B07D97CE999A02D380 /* Pods_JavaCoffee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JavaCoffee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +94,8 @@
 				2672DA6A248B090B0034751C /* Helpers */,
 				2672DA6C248B11E30034751C /* DrinkRow.swift */,
 				2672DA6E248B14770034751C /* DrinkItem.swift */,
+				268803F4248BEF5F002422F7 /* DrinkListener.swift */,
+				268803F6248C4FE3002422F7 /* DrinkDetail.swift */,
 			);
 			path = JavaCoffee;
 			sourceTree = "<group>";
@@ -257,9 +263,11 @@
 				2672DA6F248B14770034751C /* DrinkItem.swift in Sources */,
 				26258EB9248AE410009769C1 /* JavaCoffee.xcdatamodeld in Sources */,
 				26258EBB248AE410009769C1 /* ContentView.swift in Sources */,
+				268803F7248C4FE3002422F7 /* DrinkDetail.swift in Sources */,
 				2672DA65248AF2630034751C /* Drink.swift in Sources */,
 				2672DA69248AF9000034751C /* Constants.swift in Sources */,
 				2672DA67248AF67A0034751C /* FirebaseReference.swift in Sources */,
+				268803F5248BEF5F002422F7 /* DrinkListener.swift in Sources */,
 				26258EB6248AE410009769C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
