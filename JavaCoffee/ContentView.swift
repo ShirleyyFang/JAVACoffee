@@ -10,9 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @ObservedObject var drinkListener = DrinkListener()
+    
     var categories:[String:[Drink]]{
+        
         .init(
-            grouping:drinkData,
+            grouping:drinkListener.drinks,
             by:{$0.category.rawValue}
         )
     }
