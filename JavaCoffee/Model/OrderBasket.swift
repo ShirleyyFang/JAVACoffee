@@ -16,8 +16,9 @@ class OrderBasket: Identifiable {
     var items:[Drink] = []
     
     var total:Double {
+        print("comes to total function!!!")
         if items.count > 0 {
-            return items.reduce(0){$0 + $1.price}
+            return items.reduce(0){$0 + $1.price} //calculate total price
         }else{
             return 0.0
         }
@@ -35,7 +36,7 @@ class OrderBasket: Identifiable {
     
     func emptyBasket(){
         self.items = []
-        //save to firebase
+        saveBasketToFirestore()
     }
     
     func saveBasketToFirestore(){
@@ -43,6 +44,16 @@ class OrderBasket: Identifiable {
     }
 }
 
-//func basketDictionaryFrom(_ basket:OrderBasket) -> [String:Any]{
-//    
-//}
+func basketDictionaryFrom(_ basket:OrderBasket) -> [String:Any]{
+    var allDrinkIds:[String] = []
+    for drink in basket.items{
+        allDrinkIds.append(drink.id)
+    }
+    return NSDictionary(objects: [basket.id ?? "unknown",
+                                  basket.ownerId ?? "unknown",
+                                  allDrinkIds],
+                        forKeys: [kID as NSCopying,
+                                  kOWNERID as NSCopying,
+                                  kDRINKIDs as NSCopying]
+    ) as! [String: Any]
+}
