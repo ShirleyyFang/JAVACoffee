@@ -22,6 +22,7 @@
 		2672DA6F248B14770034751C /* DrinkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672DA6E248B14770034751C /* DrinkItem.swift */; };
 		268803F5248BEF5F002422F7 /* DrinkListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268803F4248BEF5F002422F7 /* DrinkListener.swift */; };
 		268803F7248C4FE3002422F7 /* DrinkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268803F6248C4FE3002422F7 /* DrinkDetail.swift */; };
+		26D30692249B0BA3000AB98C /* OrderBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D30691249B0BA3000AB98C /* OrderBasket.swift */; };
 		5AABAEF932B32FB4A55BEF8C /* Pods_JavaCoffee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FABD7B07D97CE999A02D380 /* Pods_JavaCoffee.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		2672DA6E248B14770034751C /* DrinkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkItem.swift; sourceTree = "<group>"; };
 		268803F4248BEF5F002422F7 /* DrinkListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkListener.swift; sourceTree = "<group>"; };
 		268803F6248C4FE3002422F7 /* DrinkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetail.swift; sourceTree = "<group>"; };
+		26D30691249B0BA3000AB98C /* OrderBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBasket.swift; sourceTree = "<group>"; };
 		290CCF3B5224E1C9EE7B330D /* Pods-JavaCoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaCoffee.release.xcconfig"; path = "Target Support Files/Pods-JavaCoffee/Pods-JavaCoffee.release.xcconfig"; sourceTree = "<group>"; };
 		4FABD7B07D97CE999A02D380 /* Pods_JavaCoffee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JavaCoffee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				2672DA64248AF2630034751C /* Drink.swift */,
+				26D30691249B0BA3000AB98C /* OrderBasket.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				26258EB4248AE410009769C1 /* AppDelegate.swift in Sources */,
 				2672DA6D248B11E30034751C /* DrinkRow.swift in Sources */,
+				26D30692249B0BA3000AB98C /* OrderBasket.swift in Sources */,
 				2672DA6F248B14770034751C /* DrinkItem.swift in Sources */,
 				26258EB9248AE410009769C1 /* JavaCoffee.xcdatamodeld in Sources */,
 				26258EBB248AE410009769C1 /* ContentView.swift in Sources */,
