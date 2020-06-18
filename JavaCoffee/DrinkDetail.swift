@@ -71,6 +71,7 @@ struct DrinkDetail_Previews: PreviewProvider {
 
 struct  OrderButton: View {
     
+    @ObservedObject var basketListener = BasketListener()
     @Binding var showAlert: Bool
     
     var drink:Drink //it has to know which drink it is ordering
@@ -78,6 +79,7 @@ struct  OrderButton: View {
     var body: some View {
         Button(action: {
             self.showAlert.toggle()
+            self.addItemToBasket()
             print("add to basket,\(self.drink.name)")
         }){
             Text("Add to basket")
@@ -87,5 +89,22 @@ struct  OrderButton: View {
         .font(.headline)
         .background(Color.blue)
         .cornerRadius(10)
+    }
+    
+    private func addItemToBasket(){
+        
+        var orderBasket: OrderBasket!
+        
+        if self.basketListener.orderBasket != nil{
+            orderBasket = self.basketListener.orderBasket
+        }else{
+            orderBasket = OrderBasket()
+            orderBasket.ownerId = "123"
+            orderBasket.id = UUID().uuidString
+        }
+        
+        //check if user has basket
+        orderBasket.add(self.drink)
+        orderBasket.saveBasketToFirestore()
     }
 }

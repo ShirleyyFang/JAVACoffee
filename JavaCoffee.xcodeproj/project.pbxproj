@@ -22,7 +22,12 @@
 		2672DA6F248B14770034751C /* DrinkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672DA6E248B14770034751C /* DrinkItem.swift */; };
 		268803F5248BEF5F002422F7 /* DrinkListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268803F4248BEF5F002422F7 /* DrinkListener.swift */; };
 		268803F7248C4FE3002422F7 /* DrinkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268803F6248C4FE3002422F7 /* DrinkDetail.swift */; };
+		26AF7005249C0A6400C389C6 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF7004249C0A6400C389C6 /* Order.swift */; };
 		26D30692249B0BA3000AB98C /* OrderBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D30691249B0BA3000AB98C /* OrderBasket.swift */; };
+		26DDA06A249BC7F200B94FE0 /* BasketListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDA069249BC7F200B94FE0 /* BasketListener.swift */; };
+		26DDA06C249BD63B00B94FE0 /* OrderBasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDA06B249BD63B00B94FE0 /* OrderBasketView.swift */; };
+		26DDA06E249BDB6900B94FE0 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDA06D249BDB6900B94FE0 /* Extension.swift */; };
+		26DDA070249BF35900B94FE0 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DDA06F249BF35900B94FE0 /* CheckoutView.swift */; };
 		5AABAEF932B32FB4A55BEF8C /* Pods_JavaCoffee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FABD7B07D97CE999A02D380 /* Pods_JavaCoffee.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +50,12 @@
 		2672DA6E248B14770034751C /* DrinkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkItem.swift; sourceTree = "<group>"; };
 		268803F4248BEF5F002422F7 /* DrinkListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkListener.swift; sourceTree = "<group>"; };
 		268803F6248C4FE3002422F7 /* DrinkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetail.swift; sourceTree = "<group>"; };
+		26AF7004249C0A6400C389C6 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		26D30691249B0BA3000AB98C /* OrderBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBasket.swift; sourceTree = "<group>"; };
+		26DDA069249BC7F200B94FE0 /* BasketListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketListener.swift; sourceTree = "<group>"; };
+		26DDA06B249BD63B00B94FE0 /* OrderBasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBasketView.swift; sourceTree = "<group>"; };
+		26DDA06D249BDB6900B94FE0 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		26DDA06F249BF35900B94FE0 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		290CCF3B5224E1C9EE7B330D /* Pods-JavaCoffee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaCoffee.release.xcconfig"; path = "Target Support Files/Pods-JavaCoffee/Pods-JavaCoffee.release.xcconfig"; sourceTree = "<group>"; };
 		4FABD7B07D97CE999A02D380 /* Pods_JavaCoffee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JavaCoffee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,6 +108,8 @@
 				2672DA6E248B14770034751C /* DrinkItem.swift */,
 				268803F4248BEF5F002422F7 /* DrinkListener.swift */,
 				268803F6248C4FE3002422F7 /* DrinkDetail.swift */,
+				26DDA06B249BD63B00B94FE0 /* OrderBasketView.swift */,
+				26DDA06F249BF35900B94FE0 /* CheckoutView.swift */,
 			);
 			path = JavaCoffee;
 			sourceTree = "<group>";
@@ -115,6 +127,8 @@
 			children = (
 				2672DA66248AF67A0034751C /* FirebaseReference.swift */,
 				2672DA68248AF9000034751C /* Constants.swift */,
+				26DDA069249BC7F200B94FE0 /* BasketListener.swift */,
+				26DDA06D249BDB6900B94FE0 /* Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -124,6 +138,7 @@
 			children = (
 				2672DA64248AF2630034751C /* Drink.swift */,
 				26D30691249B0BA3000AB98C /* OrderBasket.swift */,
+				26AF7004249C0A6400C389C6 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -261,10 +276,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26DDA06E249BDB6900B94FE0 /* Extension.swift in Sources */,
+				26DDA06A249BC7F200B94FE0 /* BasketListener.swift in Sources */,
 				26258EB4248AE410009769C1 /* AppDelegate.swift in Sources */,
 				2672DA6D248B11E30034751C /* DrinkRow.swift in Sources */,
 				26D30692249B0BA3000AB98C /* OrderBasket.swift in Sources */,
 				2672DA6F248B14770034751C /* DrinkItem.swift in Sources */,
+				26AF7005249C0A6400C389C6 /* Order.swift in Sources */,
 				26258EB9248AE410009769C1 /* JavaCoffee.xcdatamodeld in Sources */,
 				26258EBB248AE410009769C1 /* ContentView.swift in Sources */,
 				268803F7248C4FE3002422F7 /* DrinkDetail.swift in Sources */,
@@ -273,6 +291,8 @@
 				2672DA67248AF67A0034751C /* FirebaseReference.swift in Sources */,
 				268803F5248BEF5F002422F7 /* DrinkListener.swift in Sources */,
 				26258EB6248AE410009769C1 /* SceneDelegate.swift in Sources */,
+				26DDA070249BF35900B94FE0 /* CheckoutView.swift in Sources */,
+				26DDA06C249BD63B00B94FE0 /* OrderBasketView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

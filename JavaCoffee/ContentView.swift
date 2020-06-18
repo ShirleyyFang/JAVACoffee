@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var drinkListener = DrinkListener()
+    @State private var showingBasket = false
     
     var categories:[String:[Drink]]{
         
@@ -44,10 +45,13 @@ struct ContentView: View {
                     }),
                     trailing: Button(action: {
                         //code
-                        print("basket")
+                        self.showingBasket.toggle()
                     },label: {
                         Image("basket")
                     })
+                        .sheet(isPresented: $showingBasket){
+                            OrderBasketView()
+                    }
 
             )
 
