@@ -1,2 +1,2 @@
 # JAVACoffee
-![alt text](javaCoffee1.png)
+![alt text](JAVACoffee1.pdf)
