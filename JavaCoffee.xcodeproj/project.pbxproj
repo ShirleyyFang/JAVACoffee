@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		262299E024A13F59004EDCE9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262299DF24A13F59004EDCE9 /* LoginView.swift */; };
+		262299E224A1518D004EDCE9 /* FinishRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262299E124A1518D004EDCE9 /* FinishRegistrationView.swift */; };
+		262299E424A17971004EDCE9 /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262299E324A17971004EDCE9 /* FUser.swift */; };
 		26258EB4248AE410009769C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26258EB3248AE410009769C1 /* AppDelegate.swift */; };
 		26258EB6248AE410009769C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26258EB5248AE410009769C1 /* SceneDelegate.swift */; };
 		26258EB9248AE410009769C1 /* JavaCoffee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26258EB7248AE410009769C1 /* JavaCoffee.xcdatamodeld */; };
@@ -33,6 +36,9 @@
 
 /* Begin PBXFileReference section */
 		1CD91221E5562A6094B98E43 /* Pods-JavaCoffee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JavaCoffee.debug.xcconfig"; path = "Target Support Files/Pods-JavaCoffee/Pods-JavaCoffee.debug.xcconfig"; sourceTree = "<group>"; };
+		262299DF24A13F59004EDCE9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		262299E124A1518D004EDCE9 /* FinishRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRegistrationView.swift; sourceTree = "<group>"; };
+		262299E324A17971004EDCE9 /* FUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
 		26258EB0248AE410009769C1 /* JavaCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JavaCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26258EB3248AE410009769C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26258EB5248AE410009769C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +116,8 @@
 				268803F6248C4FE3002422F7 /* DrinkDetail.swift */,
 				26DDA06B249BD63B00B94FE0 /* OrderBasketView.swift */,
 				26DDA06F249BF35900B94FE0 /* CheckoutView.swift */,
+				262299DF24A13F59004EDCE9 /* LoginView.swift */,
+				262299E124A1518D004EDCE9 /* FinishRegistrationView.swift */,
 			);
 			path = JavaCoffee;
 			sourceTree = "<group>";
@@ -139,6 +147,7 @@
 				2672DA64248AF2630034751C /* Drink.swift */,
 				26D30691249B0BA3000AB98C /* OrderBasket.swift */,
 				26AF7004249C0A6400C389C6 /* Order.swift */,
+				262299E324A17971004EDCE9 /* FUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,7 +297,10 @@
 				268803F7248C4FE3002422F7 /* DrinkDetail.swift in Sources */,
 				2672DA65248AF2630034751C /* Drink.swift in Sources */,
 				2672DA69248AF9000034751C /* Constants.swift in Sources */,
+				262299E024A13F59004EDCE9 /* LoginView.swift in Sources */,
+				262299E224A1518D004EDCE9 /* FinishRegistrationView.swift in Sources */,
 				2672DA67248AF67A0034751C /* FirebaseReference.swift in Sources */,
+				262299E424A17971004EDCE9 /* FUser.swift in Sources */,
 				268803F5248BEF5F002422F7 /* DrinkListener.swift in Sources */,
 				26258EB6248AE410009769C1 /* SceneDelegate.swift in Sources */,
 				26DDA070249BF35900B94FE0 /* CheckoutView.swift in Sources */,
