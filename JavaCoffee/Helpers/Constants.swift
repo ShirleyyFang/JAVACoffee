@@ -25,6 +25,7 @@ public let kCUSTOMERID = "customerId"
 public let kAMOUNT = "amount"
 
 //FUser
+//public let kUSERID = "userId"
 public let kEMAIL = "email"
 public let kFIRSTNAME = "firstname"
 public let kLASTNAME = "lastname"

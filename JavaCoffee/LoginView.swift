@@ -85,9 +85,42 @@ struct LoginView: View {
         }//End of VStack
     }
     
-    private func signUpUser(){}
+    private func signUpUser(){
+        
+        if email != "" && password != "" {
+            if password == repeatPassword {
+                FUser.registerUserWith(email: email, password: password){(error) in
+                    if error != nil{
+                        print("Error registering user:",error?.localizedDescription)
+                        return
+                    }
+                    print("user has been created")
+                    //go back to the app
+                    //check if user onboarding is done
+                }
+            }else{
+                print("passwords don't match")
+            }
+        }else{
+            print("Email and password must be set")
+        }
+        
+    }
     
-    private func loginUser(){}
+    private func loginUser(){
+        if email != "" && password != "" {
+            FUser.loginUserWith(email: email, password: password){ (error,isEmailVerfied) in
+                if error != nil{
+                    print("error loging in the user: ", error!.localizedDescription)
+                    return
+                }
+                
+                if FUser.currentUser() != nil && FUser.currentUser()!.onBoarding {
+                    
+                }
+            }
+        }
+    }
     
     private func resetPassword(){}
 }
