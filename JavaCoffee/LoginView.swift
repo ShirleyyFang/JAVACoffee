@@ -11,7 +11,8 @@ import SwiftUI
 struct LoginView: View {
     
     @State var showingSignup = false
-    
+    @State var showingFinishReg = false
+    @Environment(\.presentationMode) var presentationMode
     @State var email = ""
     @State var password = ""
     @State var repeatPassword = ""
@@ -83,6 +84,9 @@ struct LoginView: View {
                 .padding(.top,45)
             SignUpView(showingSignup: $showingSignup)
         }//End of VStack
+        .sheet(isPresented: $showingFinishReg){
+                FinishRegistrationView()
+        }
     }
     
     private func signUpUser(){
@@ -116,13 +120,28 @@ struct LoginView: View {
                 }
                 
                 if FUser.currentUser() != nil && FUser.currentUser()!.onBoarding {
-                    
+                    self.presentationMode.wrappedValue.dismiss()
+                }else{
+                    self.showingFinishReg.toggle()
                 }
             }
         }
     }
     
-    private func resetPassword(){}
+    private func resetPassword(){
+        if email != "" {
+            FUser.resetPassword(email: email) {(error) in
+                if error != nil{
+                    print("error sending reset password,",error!.localizedDescription)
+                    return
+                }
+                print("please check your email")
+            }
+        }else{
+            //notify the suer
+            print("email is empty")
+        }
+    }
 }
 
 struct LoginView_Previews: PreviewProvider {

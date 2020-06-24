@@ -38,7 +38,9 @@ struct ContentView: View {
                 .navigationBarItems(
                     leading: Button(action: {
                         //code
-                        print("log out")
+                        FUser.logOutCurrentUser{(error) in
+                            print("error logging out use,",error?.localizedDescription)
+                        }
                         //createMenu() //only enable once since we don't want duplicate menu
                     },label: {
                         Text("Log Out")
@@ -49,8 +51,7 @@ struct ContentView: View {
                     },label: {
                         Image("basket")
                     })
-                        .sheet(isPresented: $showingBasket){
-                            
+                        .sheet(isPresented: $showingBasket){                            
                             if FUser.currentUser() != nil && FUser.currentUser()!.onBoarding{
                                 OrderBasketView()
                             } else if FUser.currentUser() != nil{
