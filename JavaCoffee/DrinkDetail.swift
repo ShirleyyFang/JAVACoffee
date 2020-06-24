@@ -13,6 +13,8 @@ struct DrinkDetail: View {
     @State private var showingAlert = false
     //for .alert(isPresented: <#T##Binding<Bool>#>, content: <#T##() -> Alert#>)
     
+    @State private var showingLogin = false
+    
     var drink: Drink
     
     var body: some View {
@@ -48,7 +50,7 @@ struct DrinkDetail: View {
             
             HStack{
                 Spacer()
-                OrderButton(showAlert: $showingAlert, drink: drink)
+                OrderButton(showAlert: $showingAlert, showLogin: $showingLogin, drink: drink)
                 Spacer()
             }
             .padding(.top,50)
@@ -73,13 +75,21 @@ struct  OrderButton: View {
     
     @ObservedObject var basketListener = BasketListener()
     @Binding var showAlert: Bool
+    @Binding var showLogin: Bool
     
     var drink:Drink //it has to know which drink it is ordering
     
     var body: some View {
         Button(action: {
-            self.showAlert.toggle()
-            self.addItemToBasket()
+            
+            if FUser.currentUser() != nil && FUser.currentUser()!.onBoarding{
+                self.showAlert.toggle()
+                self.addItemToBasket()
+            }else {
+                self.showLogin.toggle()
+            }
+            
+
             print("add to basket,\(self.drink.name)")
         }){
             Text("Add to basket")
@@ -89,6 +99,13 @@ struct  OrderButton: View {
         .font(.headline)
         .background(Color.blue)
         .cornerRadius(10)
+        .sheet(isPresented: self.$showLogin){
+            if FUser.currentUser() != nil {
+                FinishRegistrationView()
+            }else{
+                LoginView()
+            }
+        }
     }
     
     private func addItemToBasket(){
@@ -99,7 +116,7 @@ struct  OrderButton: View {
             orderBasket = self.basketListener.orderBasket
         }else{
             orderBasket = OrderBasket()
-            orderBasket.ownerId = "123"
+            orderBasket.ownerId = FUser.currentId()
             orderBasket.id = UUID().uuidString
         }
         
